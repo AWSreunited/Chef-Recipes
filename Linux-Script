@@ -1,0 +1,6 @@
+execute 'Run a Script' do
+command <<-EOH
+mkdir /AWS-Dir
+touch /aws-file
+EOH
+end
