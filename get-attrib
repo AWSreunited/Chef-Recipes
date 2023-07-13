@@ -1,0 +1,13 @@
+file '/basic-info' do
+content "This Recipe Gets Attributes of the Node
+Host-Name: #{node['hostname']}
+IP-Address: #{node['ipaddress']}
+Memory: #{node['memor']['total']}
+CPU: #{node['cpu']['0']['mhz']}"
+
+owner 'root'
+group 'root'
+
+action :create
+
+end
