@@ -1,0 +1,8 @@
+package 'cronie' do
+action :install
+end
+
+service 'crond' do
+action [:enable, :start]
+end
+
